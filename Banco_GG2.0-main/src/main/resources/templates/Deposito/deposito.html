@@ -1,0 +1,35 @@
+<div class="card-form">
+    <form class="deposit">
+        <div class="form-indicator"></div>
+        <div class="form-body">
+            <div class="row">
+                <h1 style="margin-bottom:0px;">DEPOSIT FUNDS</h1>
+            </div>
+            <div class="row" >
+                <p style="margin-top:0px;" id ="donation">$0 won in the last 24 hours</p>
+            </div>
+            <div class="row">
+                <div class="form-block">
+                    <div class="button" id="1" onclick="setValue(this)">$5</div>
+                    <div class="button" id="2" onclick="setValue(this)">$10</div>
+                    <div class="button" id="3" onclick="setValue(this)">$20</div>
+                    <div class="button" id="4" onclick="setValue(this)">$40</div>
+                    <div class="button" id="5" onclick="setValue(this)">$100</div>
+                    <div class="button" id="6" onclick="setValue(this)">$250</div>
+                    <div class="button" id="7" onclick="setValue(this)">$1000</div>
+                </div>
+            </div>
+            <div class="row">
+                <input type="text" id="cc" maxlength="16" placeholder="Credit card number">
+            </div>
+            <div class="row">
+                <input type="text" id="name" placeholder="Name on card">
+                <input type="text" id ="date" maxlength="5" placeholder="MM/YY">
+                <input type="text" id ="cvc" maxlength="4" placeholder="CVC">
+            </div>
+        </div>
+        <div class="form-footer">
+            <button class="btn" onclick="validate(this)">Deposit Funds</button>
+            </div>
+    </form>
+</div>
